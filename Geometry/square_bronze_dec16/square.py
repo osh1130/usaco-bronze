@@ -1,0 +1,11 @@
+#fin = open('Geometry/square_bronze_dec16/3.in','r')
+fin = open('square.in','r')
+fout = open('square.out','w')
+x1,y1,x2,y2 = map(int,fin.readline().split())
+x3,y3,x4,y4 = map(int,fin.readline().split())
+xl,yl = min(x1,x3),min(y1,y3)
+xr,yr = max(x2,x4),max(y2,y4)
+side = max(xr - xl, yr - yl)
+area = side * side
+#print(area)
+fout.write(str(area))
