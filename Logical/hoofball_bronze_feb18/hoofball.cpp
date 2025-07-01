@@ -21,7 +21,7 @@ int main(void) {
   ifstream fin ("hoofball.in");
   ofstream fout ("hoofball.out");
   fin >> N;
-  for (int i=0; i<N; i++) fin >> x[i];
+  for (int i=0; i<N; i++) fin >> x[i]; 
 
   sort(x, x+N); // sort the positions
 
